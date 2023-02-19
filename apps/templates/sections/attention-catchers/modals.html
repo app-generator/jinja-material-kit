@@ -1,5 +1,5 @@
 {% extends 'layouts/base_background.html' %}
-{% load static %}
+
 
 {% block title %} Material Kit 2 by Creative Tim {% endblock title %}
 {% block body %} class="modals-sections" {% endblock body %}
@@ -86,7 +86,7 @@
   </div>
 </div>
 
-        <script src="{% static 'js/core/bootstrap.min.js' %}" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename = 'assets/js/core/bootstrap.min.js' )}}" type="text/javascript"></script>
         '></iframe>
             </div>
             <div class="tab-pane" id="code-alert-dismiss">
