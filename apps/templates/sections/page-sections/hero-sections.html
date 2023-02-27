@@ -1,5 +1,5 @@
 {% extends 'layouts/base_background.html' %}
-{% load static %}
+
  
 {% block title %}{% endblock title %}
 {% block body %} class="page-headers-sections" {% endblock body %}  
@@ -389,7 +389,7 @@
   {% block javascripts %}
   
     <!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
-    <script src="{% static 'js/plugins/countup.min.js' %}"></script>
+    <script src="{{ url_for('static', filename = 'assets/js/plugins/countup.min.js' )}}"></script>
     {% include 'includes/scripts_sections.html' %}
 
     <script>

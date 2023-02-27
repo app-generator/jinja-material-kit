@@ -1,4 +1,4 @@
-{% load static %}
+
 
 <footer class="footer pt-5 mt-5">
   <div class="container">
@@ -6,7 +6,7 @@
       <div class="col-md-3 mb-4 ms-auto">
         <div>
           <a href="https://appseed.us/product/material-kit/django/">
-            <img src="{% static 'img/logo-ct-dark.png' %}" class="mb-3 footer-logo" alt="main_logo">
+            <img src="{{ url_for('static', filename = 'assets/img/logo-ct-dark.png' )}}" class="mb-3 footer-logo" alt="main_logo">
           </a>
           <h6 class="font-weight-bolder mb-4">Material Kit 2</h6>
         </div>
